@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Le Jaye Jane Kaha Gaane</title>
+    
+    <link rel="icon" type="image/x-icon" href="./assets/title_logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- whole container consist of side minor navigation and major song display on right -->
+
+    <div class="container">
+      <!-- left side container nav with site logo on top at start -->
+
+      <div class="left-sm-div">
+        <!-- logo space -->
+        <div class="logo-box">
+          <img src="./assets/spotify_logo.png" />
+        </div>
+
+        <!-- Home Search Library section for music -->
+
+        <div class="home-search-library-box">
+          <!-- Single flex box for Search Home Library section -->
+
+          <div class="flex-option">
+            <img src="./assets/home_logo.png" alt="" class="option-img" />
+            <p class="option-name">Home</p>
+          </div>
+          <div class="flex-option">
+            <img src="./assets/search_logo.png" alt="" class="option-img" />
+            <p class="option-name">Search</p>
+          </div>
+          <div class="flex-option">
+            <img src="./assets/your_library.png" alt="" class="option-img" />
+            <p class="option-name">Your Library</p>
+          </div>
+        </div>
+
+        <!-- Second Section of side bar containing same style as above section containing playlists. -->
+        <div class="playlists">
+          
+            <div class="flex-playlist">
+              <img
+                class="playlist-img"
+                src="./assets/create_playlist_logo.png"
+                alt="create_playlist-img"
+              />
+              <a href="playlist.html"><p class="playlist-name">Create Playlist</p></a>
+            </div>
+
+         
+          <div class="flex-playlist">
+            <img
+              class="playlist-img"
+              src="./assets/liked_songs_logo.png"
+              alt="liked-songs-logo"
+            />
+            <p class="playlist-name">Liked Songs</p>
+          </div>
+          <div class="flex-playlist">
+            <img
+              class="playlist-img"
+              src="./assets/your_episodes_logo.png"
+              alt="your-episodes-logo"
+            />
+            <p class="playlist-name">Your Episodes</p>
+          </div>
+        </div>
+
+        <!-- This is last section of side bar containing only page links, it accquire 50% of side bar height -->
+        <div class="other-playlists">
+          <p>FAV</p>
+          <p>Daily Mix 1</p>
+          <p>Discover Weekly</p>
+          <p>Malayalam</p>
+          <p>Dance / Eelectronic Mix</p>
+          <p>EDM/ Popular</p>
+          <p>FAV</p>
+        </div>
+
+        <!-- Install app section with logo -->
+        <div class="install_section">
+          <img src="./assets/install_app.png" alt="download-icon" />
+        </div>
+      </div>
+
+      <!-- main home major landing page container contains various links of songs and singer -->
+
+      <div class="main-big-div">
+        <div class="main-nav">
+          <img
+            src="assets/slide_arrows.png"
+            class="slider"
+            alt="slider-display"
+          />
+          
+            
+              <img
+              src="assets/User.png"
+              class="user-profile"
+              
+              alt="show-user-profile"
+            />
+           
+           
+           
+          
+        </div>
+        <h2 class="main-title">Good morning</h2>
+
+        <div class="good-morn-playlist-box">
+          <div class="gm-playlist">
+            <img src="./assets/liked_song_bg.png" class="gm-playlist-img" />
+            <h3>Liked Songs</h3>
+          </div>
+          <div class="gm-playlist">
+            <img src="./assets/neffex_logo.png" class="gm-playlist-img" />
+            <h3>Neffex Playlist</h3>
+          </div>
+          <div class="gm-playlist">
+            <img src="./assets/k/da_logo.png" class="gm-playlist-img" />
+            <h3>K/DA</h3>
+          </div>
+          <div class="gm-playlist">
+            <img src="./assets/girl_logo.png" class="gm-playlist-img" />
+            <h3>Liked Songs</h3>
+          </div>
+          <div class="gm-playlist">
+            <img src="./assets/dance_logo.png" class="gm-playlist-img" />
+            <h3>Dance/Electronic Mix</h3>
+          </div>
+        </div>
+
+        <!-- big cards container -->
+        <div class="card-container">
+          <h2 class="main-title">Shows you might like</h2>
+          <!-- cards which consist of image and its discription -->
+          <div class="card">
+            <img src="./assets/fat_image.png" alt="fat_star" class="card-img" />
+
+            <p class="card-name">Weelkly Motivation</p>
+            <p class="card-discription">Ben Ina Scott</p>
+          </div>
+        </div>
+      </div>
+
+      <!--  -->
+
+      <!-- Footer player -->
+      <footer class="bottom-player">
+        <div class="item-content">
+          <img
+            src="./assets/current_player.png"
+            alt="current-player"
+            class="player-img"
+          />
+          <p class="player-info">Dreaming On</p>
+        </div>
+
+        <!-- Music Player Options -->
+
+        <div class="middle-player">
+          <div class="music-up">
+            <img src="./music_assets/raphael_shuffle.png" alt="shuffle_img" />
+            <img src="./music_assets/back_music.png" alt="pre_music" />
+            <img src="./music_assets/pause_play_logo.png" alt="p&p" />
+            <img src="./music_assets/next_music.png" alt="next_music" />
+            <img src="./music_assets/restart_music.png" alt="" />
+          </div>
+          <div class="music-down">
+            <span class="spot-time">0.00</span>
+            <input
+              type="range"
+              class="timeline-slider"
+              min="0"
+              max="100"
+              step="1"
+              value="0"
+            />
+            <span class="music-time">0.00</span>
+          </div>
+        </div>
+
+        <div class="volume-controller">
+          <img
+            src="./volume_assets/mic_logo.png"
+            alt="mic_img"
+            class="volume-option"
+          />
+          <img
+            src="./volume_assets/playlist_logo.png"
+            alt="playlist_img"
+            class="volume-option"
+          />
+          <img
+            src="./volume_assets/desktop_logo.png"
+            alt="desktop_img"
+            class="volume-option"
+          />
+          <img
+            src="./volume_assets/speaker_logo.png"
+            alt="speaker_img"
+            class="volume-option"
+          />
+          <input
+            type="range"
+            class="volume-slider"
+            min="0"
+            max="100"
+            step="1"
+            value="50"
+          />
+          <img
+            src="./volume_assets/full_screen_logo.png"
+            alt="full_screen_img"
+            class="volume-option"
+          />
+        </div>
+      </footer>
+    </div>
+
+    
+  </body>
+</html>
